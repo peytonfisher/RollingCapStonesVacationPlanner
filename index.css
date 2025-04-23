@@ -1,0 +1,270 @@
+html, body {
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    background: #a8c8e0;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #000;
+    background-image: url('./assets/ocean-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+.bg-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #3e425c40;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    gap: 50px;
+    max-height: 100vh;
+}
+
+.card,
+.card-two,
+.card-three {
+    flex-direction: column;
+    background: radial-gradient(circle, #13354199 0%, #00000000 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+}
+
+.card {
+    width: 400px;
+    height: 600px;
+    min-width: 400px;
+    min-height: 600px;
+    flex-direction: column;
+    left: 100px;
+    top: 50px;
+}
+
+.card-top {
+    height: 155px;
+    position: relative;
+}
+
+.photo,
+.photo-two,
+.photo-three {
+    position: absolute;
+    transform: translateX(-50%);
+    box-shadow: 5px 0 10px #1e526578;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.photo {
+    bottom: -80px;
+    left: 50%;
+    width: 85%;
+    height: 200px;
+}
+
+.photo img,
+.photo-two img,
+.photo-three img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 6rem 2rem 2rem;
+    text-align: center;
+}
+
+.card-content h2,
+.card-content-two h2 {
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.card-content h2 {
+    font-size: 35px;
+}
+
+.card-content h3,
+.card-content-two h3 {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: #ededed;
+}
+
+.card-content h3 {
+    font-size: 10px;
+}
+
+.card-content p,
+.card-content-two p {
+    text-align: left;
+    margin: 0.5rem 0;
+}
+
+.card-content p {
+    font-size: 14px;
+}
+
+.card-content span {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#card-text {
+    margin-top: 20px;
+    color: #cbcbcb;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-two,
+.card-three {
+    width: 900px;
+    height: 290px;
+    min-width: 900px;
+    min-height: 290px;
+    left: 100px;
+    top: 50px;
+}
+
+.card-top-two {
+    height: 155px;
+    position: relative;
+}
+
+.photo-two,
+.photo-three {
+    bottom: -115px;
+    left: 285px;
+    width: 60%;
+    height: 250px;
+}
+
+.card-content-two {
+    position: relative;
+    bottom: 230px;
+    right: -390px;
+    padding: 6rem 2rem 2rem;
+    /* text-align: center; */
+}
+
+.card-content-two h2 {
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    left: -115px;
+    top: 5px;
+}
+
+.card-content-two h3 {
+    width: 30%;
+    font-size: 9px;
+    text-align: center;
+    position: relative;
+    top: 6px;
+    right: -180px;
+}
+
+.text-content {
+    margin-top: 30px;
+}
+
+.card-content-two p {
+    font-size: 13px;
+    width: 38%;
+    position: relative;
+    left: 149px;
+}
+
+#card-text-two {
+    margin-top: 15px;
+    color: #cbcbcb;
+}
+
+.credit-line {
+    position: relative;
+    bottom: -70px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #c5c5c5;
+    z-index: 1;
+}
+
+#credit {
+    font-size: 8px;
+    text-align: center;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 860px) {
+    .header {
+        background-color: #a8c8e0;
+    }
+
+    #side-bar-menu {
+        background: linear-gradient(180deg, #a8c8e0 0%, #064358 100%);
+    }
+
+    html, body {
+        overflow-x: auto;
+    }
+}
