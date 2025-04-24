@@ -21,9 +21,16 @@ body {
     max-height: 100vh;
 }
 
-h1 {
-    margin-top: 20px;
-    margin-left: 70px;
+.title {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 33px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding-bottom: 20px;
+    color: #2f4858; 
+    align-self: center;
+    width: 100%;
 }
 
 .credit-line {
