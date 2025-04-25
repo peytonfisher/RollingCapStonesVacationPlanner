@@ -165,6 +165,10 @@ body {
     color: #cbcbcb;
 }
 
+#card-text a{
+    color: rgb(128, 199, 223);
+}
+
 .card-column {
     display: flex;
     flex-direction: column;
