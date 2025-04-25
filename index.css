@@ -9,6 +9,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    overflow-x: auto;
+
 }
 
 .main {
@@ -95,12 +97,20 @@ body {
     height: 200px;
 }
 
+.photo-two,
+.photo-three {
+    bottom: -115px;
+    left: 220px;
+    width: 50%;
+    height: 250px;
+}
+
 .photo img,
 .photo-two img,
 .photo-three img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .card-content {
@@ -117,7 +127,8 @@ body {
 }
 
 .card-content h2 {
-    font-size: 35px;
+    font-size:25px;
+    border-bottom: 1px solid white;
 }
 
 .card-content h3,
@@ -162,9 +173,9 @@ body {
 
 .card-two,
 .card-three {
-    width: 900px;
+    width: 800px;
     height: 290px;
-    min-width: 900px;
+    min-width: 800px;
     min-height: 290px;
     left: 100px;
     top: 50px;
@@ -173,14 +184,6 @@ body {
 .card-top-two {
     height: 155px;
     position: relative;
-}
-
-.photo-two,
-.photo-three {
-    bottom: -115px;
-    left: 285px;
-    width: 60%;
-    height: 250px;
 }
 
 .card-content-two {
@@ -199,17 +202,17 @@ body {
     margin: 0;
     text-align: center;
     position: relative;
-    left: -115px;
+    left: -170px;
     top: 5px;
 }
 
 .card-content-two h3 {
-    width: 30%;
+    width: 40%;
     font-size: 9.5px;
     text-align: center;
     position: relative;
     top: 4px;
-    right: -180px;
+    right: -50px;
 }
 
 .text-content {
@@ -220,11 +223,11 @@ body {
     font-size: 13px;
     width: 38%;
     position: relative;
-    left: 149px;
+    left: 50px;
 }
 
 #card-text-two {
-    margin-top: 15px;
+    margin-top: 20px;
     color: #cbcbcb;
 }
 
@@ -247,9 +250,9 @@ body {
     font-family: 'Segoe UI', sans-serif;
     position: relative;
     width: 90%;
-    height: 600px;
+    height: 500px;
     min-width: 90%;
-    min-height: 600px;
+    min-height: 500px;
 }
 
 .card-top-four {
@@ -269,12 +272,13 @@ body {
     left: 50%;
     width: 100%;
     height: 300px;
+    background-color: rgba(255, 255, 255, 0.095);
 }
 
 .photo-four img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .card-content-four {
@@ -287,7 +291,7 @@ body {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin: 0;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .card-content-four h3 {
