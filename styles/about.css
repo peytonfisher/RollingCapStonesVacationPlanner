@@ -18,6 +18,7 @@ body {
 
 .main-content {
     display: flex;
+    flex-direction: column;
     max-height: 100vh;
 }
 
@@ -33,10 +34,35 @@ body {
     width: 100%;
 }
 
-/* .team-member{
+.team-member{
+    display: flex; /* enables side-by-side layout */
+    flex-direction: row;
+    gap: 20px; /* optional spacing between the two sections */
+    padding: 20px;
+    align-items: center;
+}
 
-} */
+.profile{
+    flex: 1;
+    text-align: center;
+}
 
+.team-photo{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.bio{
+    flex: 2;
+}
+h3{
+    color:#2f4858; 
+}
+p{
+    color: #2f4858; 
+}
 .credit-line {
     position: relative;
     top: 580px;
