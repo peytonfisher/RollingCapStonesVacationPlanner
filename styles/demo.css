@@ -55,6 +55,12 @@ body {
     opacity: 0;
 }
 
+p {
+    font-size: 15px;
+    letter-spacing: 0;
+    text-transform: lowercase;
+}
+
 @keyframes fadeIn {
     to {
         opacity: 1;
