@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    background: #d7d7d7;
+    background: #224656;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
@@ -29,19 +29,30 @@ body {
     text-transform: uppercase;
     letter-spacing: 10px;
     padding-bottom: 20px;
-    color: #2f4858; 
+    color: #ffffff; 
     align-self: center;
+    width: 100%;
+}
+
+.video {
+    display: flex;
+    justify-self: center;
+    width: 60%;
+}
+
+.video video {
     width: 100%;
 }
 
 .credit-line {
     position: relative;
-    top: 580px;
+    top: 150px;
+    padding-bottom: 20px;
     font-family: sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 300;
-    color: #5e5e5e;
+    color: #a2a2a2;
     z-index: 1;
 }
 
@@ -66,3 +77,28 @@ p {
         opacity: 1;
     }
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #4f9ec9;
+    border-radius: 5px;
+    border: 2px solid #4f9ec9;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0070AD;
+    border: 2px solid #0070AD;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #a8c3d0;
+  }
+
+  .video {
+   display: flex;
+   justify-content: center;
+  }

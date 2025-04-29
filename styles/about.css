@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    background: #d7d7d7;
+    background: #a6bbc8;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
@@ -78,7 +78,8 @@ p{
 }
 .credit-line {
     position: relative;
-    top: 580px;
+    top: 560px;
+    padding-bottom: 20px;
     font-family: sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -102,3 +103,23 @@ p{
         opacity: 1;
     }
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #4f9ec9;
+    border-radius: 5px;
+    border: 2px solid #4f9ec9;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0070AD;
+    border: 2px solid #0070AD;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #a8c3d0;
+  }
